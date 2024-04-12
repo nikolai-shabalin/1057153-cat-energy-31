@@ -16,7 +16,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="#">
       <img class="main-header__logo main-header__logo--text" src="img/logo-text-header.svg" width="101" height="18" alt="">
       <span class="visually-hidden">Логотип магазина Кэт Энерджи.</span>
     </a>
@@ -26,7 +26,7 @@
       </button>
       <ul class="main-nav__list main-nav__list--close">
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--index main-nav__link--current">Главная</a>
+          <a class="main-nav__link main-nav__link--index main-nav__link--current" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--index" href="catalog.html">Каталог продукции</a>
@@ -107,8 +107,9 @@
         <div class="example__range-bar">
           <button class="example__range-toggle" type="button" aria-label="Передвижение слайдера">
             <svg width="40" height="40">
-              <use xlink:href="img/sprite.svg#icon-range-toggle"></use>
+              <use href="img/sprite.svg#icon-range-toggle"></use>
             </svg>
+          </button>
         </div>
       </div>
     </section>
@@ -128,8 +129,8 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="main-footer__logo-link">
-        <img class="main-footer__logo" src="img/logo-text-footer.svg" width="128" height="24" alt="">
+      <a class="main-footer__logo-link" href="#">
+        <img class="main-footer__logo" src="img/logo-text-footer.svg" width="128" height="24" alt="логотип">
       </a>
       <ul class="main-footer__social social">
         <li class="social__item">
@@ -152,7 +153,7 @@
     </div>
   </footer>
 
-  <script src="js/toggle.js"></script>
+  <script src="js/toggle.js" defer></script>
   <script src="js/map.js"></script>
 </body>
 
