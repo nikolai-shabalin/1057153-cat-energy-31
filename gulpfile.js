@@ -34,7 +34,7 @@ let isDevelopment = true;
 
 export function processMarkup () {
   return src(`${PATH_TO_SOURCE}**/*.html`)
-    // .pipe(htmlmin({ collapseWhitespace: !isDevelopment }))
+    .pipe(htmlmin({ collapseWhitespace: !isDevelopment }))
     .pipe(dest(PATH_TO_DIST))
     .pipe(server.stream());
 }
